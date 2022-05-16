@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="by alertem" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-v2-GwO">
+                                <rect key="frame" x="87" y="810" width="240" height="52"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alertem Logo" translatesAutoresizingMaskIntoConstraints="NO" id="nQp-Td-nQ2">
+                                <rect key="frame" x="87" y="462" width="240" height="120"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gorisco white" translatesAutoresizingMaskIntoConstraints="NO" id="9gn-rz-KMN">
+                                <rect key="frame" x="232.5" y="44" width="165.5" height="66"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alertem pic" translatesAutoresizingMaskIntoConstraints="NO" id="y89-6X-ibR">
+                                <rect key="frame" x="87" y="180" width="240" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.74158990380000001" green="0.1400278509" blue="0.1413287818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y89-6X-ibR" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.57971" id="8EA-qW-DtC"/>
+                            <constraint firstItem="9gn-rz-KMN" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" id="Ba7-GN-652"/>
+                            <constraint firstItem="9gn-rz-KMN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EmU-Db-7EO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9gn-rz-KMN" secondAttribute="trailing" constant="16" id="GX0-GW-DCs"/>
+                            <constraint firstItem="ofJ-v2-GwO" firstAttribute="leading" secondItem="nQp-Td-nQ2" secondAttribute="leading" id="HJf-aJ-qkS"/>
+                            <constraint firstItem="nQp-Td-nQ2" firstAttribute="top" secondItem="y89-6X-ibR" secondAttribute="bottom" constant="42" id="Iqn-XI-blY"/>
+                            <constraint firstItem="ofJ-v2-GwO" firstAttribute="trailing" secondItem="nQp-Td-nQ2" secondAttribute="trailing" id="Ksl-hX-eE0"/>
+                            <constraint firstItem="nQp-Td-nQ2" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.133929" id="MBq-wK-Cke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ofJ-v2-GwO" secondAttribute="bottom" id="Mc8-Z7-Br0"/>
+                            <constraint firstItem="y89-6X-ibR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="R8P-sO-fYH"/>
+                            <constraint firstItem="nQp-Td-nQ2" firstAttribute="centerX" secondItem="y89-6X-ibR" secondAttribute="centerX" id="YUG-wt-rYD"/>
+                            <constraint firstItem="y89-6X-ibR" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.267857" id="fRg-v0-LxL"/>
+                            <constraint firstItem="y89-6X-ibR" firstAttribute="top" secondItem="9gn-rz-KMN" secondAttribute="bottom" constant="70" id="mSj-Af-pIa"/>
+                            <constraint firstItem="nQp-Td-nQ2" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.57971" id="tdd-Ya-9pp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-619" y="370"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Alertem Logo" width="300" height="108"/>
+        <image name="Gorisco white" width="301" height="66"/>
+        <image name="alertem pic" width="400" height="300"/>
+        <image name="by alertem" width="303" height="52"/>
+    </resources>
+</document>
