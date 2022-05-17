@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="anX-Vk-V4y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XjP-8m-mvu">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -120,7 +120,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gorisco" translatesAutoresizingMaskIntoConstraints="NO" id="O9U-qy-uVf">
                                 <rect key="frame" x="131.66666666666666" y="771.33333333333337" width="126.66666666666666" height="38.666666666666629"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHo-Ek-FaT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHo-Ek-FaT" userLabel="Okay_Btn">
                                 <rect key="frame" x="39" y="632.66666666666663" width="312" height="45.333333333333371"/>
                                 <color key="backgroundColor" red="0.74158990380000001" green="0.1400278509" blue="0.1413287818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -128,6 +128,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Okay got it">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="OkayBtnPress:" destination="hNZ-ga-9j6" eventType="touchUpInside" id="jKs-v7-Yhc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EEe-l0-hN0"/>
@@ -207,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="to5-2M-fD1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="-684"/>
+            <point key="canvasLocation" x="1638" y="38"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0Ug-Fe-EzV">
@@ -323,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kI-00-oat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982" y="450"/>
+            <point key="canvasLocation" x="2360" y="48"/>
         </scene>
         <!--Admin GroupVC-->
         <scene sceneID="6gx-yj-eYl">
@@ -338,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXs-fa-hYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2806" y="39"/>
+            <point key="canvasLocation" x="3322" y="48"/>
         </scene>
     </scenes>
     <resources>
