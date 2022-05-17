@@ -7,12 +7,35 @@
 
 import UIKit
 
-class sendLocationVC: UIViewController {
+class sendLocationVC: UIViewController, UINavigationBarDelegate {
+    
+    
+    @IBOutlet weak var nv_Item: UINavigationItem!
+    
+    @IBOutlet weak var NV: UINavigationBar!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
+        addNavBarImage()
+            
+    }
+    
+    func addNavBarImage() {
+
+           //Your logo url here
+        let logo = UIImage(named: "Alertem Logo")
+        
+        NV?.backItem?.titleView = UIImageView(image: logo)
+        
+        var imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        imageView = UIImageView(image: logo)
+        imageView.contentMode = .scaleAspectFit
+        self.nv_Item.titleView = imageView
+        
     }
     
 

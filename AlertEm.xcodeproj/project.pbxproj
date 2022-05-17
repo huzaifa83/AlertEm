@@ -15,6 +15,7 @@
 		068A4F6327E76ED7004EB61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068A4F6227E76ED7004EB61D /* Assets.xcassets */; };
 		068A4F6627E76ED7004EB61D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068A4F6427E76ED7004EB61D /* LaunchScreen.storyboard */; };
 		0694C61D27F475C700D663A3 /* OkayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0694C61C27F475C700D663A3 /* OkayViewController.swift */; };
+		069B75F9283391530026745A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 069B75F8283391530026745A /* 2.jpg */; };
 		35CB9B622832657D0066D98B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B612832657D0066D98B /* loginViewController.swift */; };
 		35CB9B64283265BF0066D98B /* sendLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B63283265BF0066D98B /* sendLocationVC.swift */; };
 		35CB9B66283266170066D98B /* admin_GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B65283266170066D98B /* admin_GroupVC.swift */; };
@@ -31,6 +32,7 @@
 		068A4F6527E76ED7004EB61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		068A4F6727E76ED7004EB61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0694C61C27F475C700D663A3 /* OkayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkayViewController.swift; sourceTree = "<group>"; };
+		069B75F8283391530026745A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		35CB9B612832657D0066D98B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		35CB9B63283265BF0066D98B /* sendLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendLocationVC.swift; sourceTree = "<group>"; };
 		35CB9B65283266170066D98B /* admin_GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admin_GroupVC.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				35CB9B612832657D0066D98B /* loginViewController.swift */,
 				35CB9B63283265BF0066D98B /* sendLocationVC.swift */,
 				35CB9B65283266170066D98B /* admin_GroupVC.swift */,
+				069B75F8283391530026745A /* 2.jpg */,
 			);
 			path = AlertEm;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				068A4F6627E76ED7004EB61D /* LaunchScreen.storyboard in Resources */,
 				068A4F6327E76ED7004EB61D /* Assets.xcassets in Resources */,
+				069B75F9283391530026745A /* 2.jpg in Resources */,
 				068A4F6127E76ED2004EB61D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
