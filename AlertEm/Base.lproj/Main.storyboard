@@ -479,7 +479,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBN-tB-5nK">
                                 <rect key="frame" x="65.5" y="244" width="283" height="69"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="SEND LOCATION "/>
+                                <buttonConfiguration key="configuration" style="plain" title="SEND LOCATION ">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTW-zN-BDn">
                                 <rect key="frame" x="181" y="383" width="52" height="46"/>
@@ -490,7 +492,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awt-V5-gr5">
                                 <rect key="frame" x="132" y="496" width="150" height="150"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="TRIGGER  PANNIC"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TRIGGER  PANNIC">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="triggerBtnPress:" destination="anX-Vk-V4y" eventType="touchUpInside" id="yWH-TD-Tfj"/>
                                 </connections>
