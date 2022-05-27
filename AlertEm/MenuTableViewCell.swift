@@ -13,6 +13,7 @@ class MenuTableViewCell: UITableViewCell {
     @IBOutlet weak var MenuIconsNames: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        print("hi")
         // Initialization code
     }
 

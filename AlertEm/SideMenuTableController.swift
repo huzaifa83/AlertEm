@@ -17,6 +17,7 @@ class SideMenuTableController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("Hello")
         MenuTableView.dataSource = self
         MenuTableView.dataSource = self
         

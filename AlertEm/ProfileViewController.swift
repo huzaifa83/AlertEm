@@ -27,6 +27,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var DesinationTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Hello")
 
         EditAndSavebutton.setTitle("EDIT", for: .normal)
         navigationController?.setNavigationBarHidden(false, animated: true)
