@@ -19,6 +19,10 @@
 		35CB9B622832657D0066D98B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B612832657D0066D98B /* loginViewController.swift */; };
 		35CB9B64283265BF0066D98B /* sendLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B63283265BF0066D98B /* sendLocationVC.swift */; };
 		35CB9B66283266170066D98B /* admin_GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B65283266170066D98B /* admin_GroupVC.swift */; };
+		4D33074B283794110014B00C /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D33074A283794110014B00C /* MenuTableViewCell.swift */; };
+		4D446F4528364FB3003189C1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D446F4428364FB3003189C1 /* ProfileViewController.swift */; };
+		4DA18B262840C13D00C3AD59 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA18B252840C13D00C3AD59 /* SideMenu */; };
+		4DDA15D728350A0C00C6E506 /* SideMenuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA15D628350A0C00C6E506 /* SideMenuTableController.swift */; };
 		E8C262282833AE1800C28D8B /* contactsTvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C262272833AE1800C28D8B /* contactsTvViewController.swift */; };
 		E8C2622A2833B02000C28D8B /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C262292833B02000C28D8B /* customTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +42,9 @@
 		35CB9B612832657D0066D98B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		35CB9B63283265BF0066D98B /* sendLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendLocationVC.swift; sourceTree = "<group>"; };
 		35CB9B65283266170066D98B /* admin_GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admin_GroupVC.swift; sourceTree = "<group>"; };
+		4D33074A283794110014B00C /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewCell.swift; path = /Users/shubhammeher/AlertEm/AlertEm/MenuTableViewCell.swift; sourceTree = "<absolute>"; };
+		4D446F4428364FB3003189C1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = /Users/shubhammeher/AlertEm/AlertEm/ProfileViewController.swift; sourceTree = "<absolute>"; };
+		4DDA15D628350A0C00C6E506 /* SideMenuTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableController.swift; path = /Users/shubhammeher/AlertEm/AlertEm/SideMenuTableController.swift; sourceTree = "<absolute>"; };
 		E8C262272833AE1800C28D8B /* contactsTvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsTvViewController.swift; sourceTree = "<group>"; };
 		E8C262292833B02000C28D8B /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA18B262840C13D00C3AD59 /* SideMenu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,7 @@
 			children = (
 				068A4F5827E76ED2004EB61D /* AlertEm */,
 				068A4F5727E76ED2004EB61D /* Products */,
+				CFEAC5B89BBF332B2F89897B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,16 +88,26 @@
 				0694C61C27F475C700D663A3 /* OkayViewController.swift */,
 				E8C262272833AE1800C28D8B /* contactsTvViewController.swift */,
 				E8C262292833B02000C28D8B /* customTableViewCell.swift */,
+				35CB9B63283265BF0066D98B /* sendLocationVC.swift */,
+				4DDA15D628350A0C00C6E506 /* SideMenuTableController.swift */,
+				4D446F4428364FB3003189C1 /* ProfileViewController.swift */,
+				4D33074A283794110014B00C /* MenuTableViewCell.swift */,
 				068A4F5F27E76ED2004EB61D /* Main.storyboard */,
 				068A4F6227E76ED7004EB61D /* Assets.xcassets */,
 				068A4F6427E76ED7004EB61D /* LaunchScreen.storyboard */,
 				068A4F6727E76ED7004EB61D /* Info.plist */,
 				35CB9B612832657D0066D98B /* loginViewController.swift */,
-				35CB9B63283265BF0066D98B /* sendLocationVC.swift */,
 				35CB9B65283266170066D98B /* admin_GroupVC.swift */,
 				069B75F8283391530026745A /* 2.jpg */,
 			);
 			path = AlertEm;
+			sourceTree = "<group>";
+		};
+		CFEAC5B89BBF332B2F89897B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +126,9 @@
 			dependencies = (
 			);
 			name = AlertEm;
+			packageProductDependencies = (
+				4DA18B252840C13D00C3AD59 /* SideMenu */,
+			);
 			productName = AlertEm;
 			productReference = 068A4F5627E76ED2004EB61D /* AlertEm.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 068A4F4D27E76ED2004EB61D;
+			packageReferences = (
+				4DA18B242840C13D00C3AD59 /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			productRefGroup = 068A4F5727E76ED2004EB61D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,12 +189,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0625B86F27EE4A8C0094A90F /* OTPViewController.swift in Sources */,
+				4DDA15D728350A0C00C6E506 /* SideMenuTableController.swift in Sources */,
 				35CB9B64283265BF0066D98B /* sendLocationVC.swift in Sources */,
 				E8C2622A2833B02000C28D8B /* customTableViewCell.swift in Sources */,
 				068A4F5E27E76ED2004EB61D /* ViewController.swift in Sources */,
 				35CB9B622832657D0066D98B /* loginViewController.swift in Sources */,
+				4D446F4528364FB3003189C1 /* ProfileViewController.swift in Sources */,
 				35CB9B66283266170066D98B /* admin_GroupVC.swift in Sources */,
 				068A4F5A27E76ED2004EB61D /* AppDelegate.swift in Sources */,
+				4D33074B283794110014B00C /* MenuTableViewCell.swift in Sources */,
 				0694C61D27F475C700D663A3 /* OkayViewController.swift in Sources */,
 				E8C262282833AE1800C28D8B /* contactsTvViewController.swift in Sources */,
 				068A4F5C27E76ED2004EB61D /* SceneDelegate.swift in Sources */,
@@ -392,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DA18B242840C13D00C3AD59 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DA18B252840C13D00C3AD59 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DA18B242840C13D00C3AD59 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 068A4F4E27E76ED2004EB61D /* Project object */;
 }

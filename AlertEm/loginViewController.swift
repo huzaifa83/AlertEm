@@ -14,7 +14,7 @@ class loginViewController: UIViewController {
         btn.backgroundColor = UIColor(displayP3Red: 189/255, green: 36/255, blue: 36/255, alpha: 1)
         
         super.viewDidLoad()
-
+        navigationController?.setNavigationBarHidden(true, animated: true)
         // Do any additional setup after loading the view.
     }
     
@@ -23,7 +23,8 @@ class loginViewController: UIViewController {
         
         let vc  = storyboard?.instantiateViewController(withIdentifier: "sendLocationVC") as! sendLocationVC
        
-        present(vc, animated: true, completion: nil)
+//        present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

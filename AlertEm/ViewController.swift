@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     @IBAction func submitBtnPress(_ sender: UIButton) {
     
         let vc = storyboard?.instantiateViewController(withIdentifier: "OTPViewController") as! OTPViewController
-        present(vc, animated: true, completion: nil)
+//        present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     

@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import SideMenu
 
 class sendLocationVC: UIViewController, UINavigationBarDelegate {
     
     
     @IBOutlet weak var nv_Item: UINavigationItem!
     
+    @IBOutlet weak var navigation: UINavigationItem!
     @IBOutlet weak var NV: UINavigationBar!
     @IBOutlet weak var sendLcotion: UIButton!
     
@@ -23,7 +25,18 @@ class sendLocationVC: UIViewController, UINavigationBarDelegate {
         // Do any additional setup after loading the view.
     
         addNavBarImage()
+        navigationItem.hidesBackButton = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
             
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func addNavBarImage() {
@@ -61,4 +74,11 @@ class sendLocationVC: UIViewController, UINavigationBarDelegate {
         present(vc, animated: true, completion: nil)
     }
     
+    
+    // added bar item action button to show side menu
+    @IBAction func SideMenuButton(_ sender: UIBarButtonItem) {
+        print("side menu button clicked")
+        let sideButton =  storyboard?.instantiateViewController(withIdentifier:"VC") as! SideMenuNavigationController
+        present(sideButton, animated: true, completion: nil)
+    }
 }

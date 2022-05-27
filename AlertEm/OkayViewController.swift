@@ -20,7 +20,8 @@ class OkayViewController: UIViewController {
     
         let vc = storyboard?.instantiateViewController(withIdentifier: "loginViewController") as! loginViewController
         
-        present(vc, animated: true, completion: nil)
+//        present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     
     }
     
