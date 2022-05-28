@@ -20,6 +20,7 @@
 		35CB9B64283265BF0066D98B /* sendLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B63283265BF0066D98B /* sendLocationVC.swift */; };
 		35CB9B66283266170066D98B /* admin_GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B65283266170066D98B /* admin_GroupVC.swift */; };
 		4D1D7DAB284218C600656CFB /* MenuTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D7DAA284218C600656CFB /* MenuTableViewCell1.swift */; };
+		4D1D7DAD2842191E00656CFB /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D7DAC2842191E00656CFB /* ViewController4.swift */; };
 		4D446F4528364FB3003189C1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D446F4428364FB3003189C1 /* ProfileViewController.swift */; };
 		4DA18B262840C13D00C3AD59 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA18B252840C13D00C3AD59 /* SideMenu */; };
 		4DDA15D728350A0C00C6E506 /* SideMenuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA15D628350A0C00C6E506 /* SideMenuTableController.swift */; };
@@ -43,6 +44,7 @@
 		35CB9B63283265BF0066D98B /* sendLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendLocationVC.swift; sourceTree = "<group>"; };
 		35CB9B65283266170066D98B /* admin_GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admin_GroupVC.swift; sourceTree = "<group>"; };
 		4D1D7DAA284218C600656CFB /* MenuTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell1.swift; sourceTree = "<group>"; };
+		4D1D7DAC2842191E00656CFB /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		4D446F4428364FB3003189C1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = /Users/shubhammeher/AlertEm/AlertEm/ProfileViewController.swift; sourceTree = "<absolute>"; };
 		4DDA15D628350A0C00C6E506 /* SideMenuTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuTableController.swift; path = /Users/shubhammeher/AlertEm/AlertEm/SideMenuTableController.swift; sourceTree = "<absolute>"; };
 		E8C262272833AE1800C28D8B /* contactsTvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsTvViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				4DDA15D628350A0C00C6E506 /* SideMenuTableController.swift */,
 				4D446F4428364FB3003189C1 /* ProfileViewController.swift */,
 				4D1D7DAA284218C600656CFB /* MenuTableViewCell1.swift */,
+				4D1D7DAC2842191E00656CFB /* ViewController4.swift */,
 				068A4F5F27E76ED2004EB61D /* Main.storyboard */,
 				068A4F6227E76ED7004EB61D /* Assets.xcassets */,
 				068A4F6427E76ED7004EB61D /* LaunchScreen.storyboard */,
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0625B86F27EE4A8C0094A90F /* OTPViewController.swift in Sources */,
+				4D1D7DAD2842191E00656CFB /* ViewController4.swift in Sources */,
 				4DDA15D728350A0C00C6E506 /* SideMenuTableController.swift in Sources */,
 				35CB9B64283265BF0066D98B /* sendLocationVC.swift in Sources */,
 				4D1D7DAB284218C600656CFB /* MenuTableViewCell1.swift in Sources */,
