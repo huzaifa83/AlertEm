@@ -22,6 +22,7 @@ class OkayViewController: UIViewController {
         
 //        present(vc, animated: true, completion: nil)
         navigationController?.pushViewController(vc, animated: true)
+        print("okvc test")
     
     }
     
