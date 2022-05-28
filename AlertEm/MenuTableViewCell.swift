@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuTableViewCell: UITableViewCell {
+class MenuTableViewCell1: UITableViewCell {
 
     @IBOutlet weak var MenuIconImages: UIImageView!
     @IBOutlet weak var MenuIconsNames: UILabel!

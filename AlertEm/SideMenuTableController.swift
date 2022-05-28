@@ -43,7 +43,7 @@ class SideMenuTableController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OptionName", for: indexPath) as! MenuTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OptionName", for: indexPath) as! MenuTableViewCell1
         cell.backgroundColor = UIColor.lightGray
         cell.MenuIconImages.image = UIImage(named: self.LogoImg[indexPath.row])
         cell.MenuIconsNames.text = names[indexPath.row]
