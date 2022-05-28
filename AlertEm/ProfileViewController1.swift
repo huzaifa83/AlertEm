@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController1: UIViewController {
 
     var editbuttonToggle : Bool = false
 

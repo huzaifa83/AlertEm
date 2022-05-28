@@ -8,7 +8,7 @@
 import UIKit
 import SideMenu
 
-class SideMenuTableController: UITableViewController {
+class SideMenuTableController1: UITableViewController {
     
     @IBOutlet var MenuTableView: UITableView!
     var LogoImg = ["Profile","NotificationBellBlack","Settings","FAQs","Help","About","Disclaimer","Termandcondition","home"]
@@ -56,7 +56,7 @@ class SideMenuTableController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("this is the row number you have selected \(indexPath.row)")
         
-        let selectedOption = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        let selectedOption = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController1
         navigationController?.pushViewController(selectedOption, animated: true)
         return
     }
