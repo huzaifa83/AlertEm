@@ -66,7 +66,6 @@
 			children = (
 				068A4F5827E76ED2004EB61D /* AlertEm */,
 				068A4F5727E76ED2004EB61D /* Products */,
-				CFEAC5B89BBF332B2F89897B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +100,6 @@
 				069B75F8283391530026745A /* 2.jpg */,
 			);
 			path = AlertEm;
-			sourceTree = "<group>";
-		};
-		CFEAC5B89BBF332B2F89897B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
