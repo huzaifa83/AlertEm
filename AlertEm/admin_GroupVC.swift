@@ -9,21 +9,37 @@ import UIKit
 
 class admin_GroupVC: UIViewController {
 
+    
+    
+    @IBOutlet weak var NV: UINavigationBar!
+    
+    
+    @IBOutlet weak var nv_Item: UINavigationItem!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        addNavBarImage()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+    func addNavBarImage() {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+            //Your logo url here
+        // Add the image to constant "logo"
+        let logo = UIImage(named: "Alertem Logo")
+        // Add the logo to NV's titleView
+        NV?.backItem?.titleView = UIImageView(image: logo)
+        
+        // Create the imageView
+        var imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+       // Add the logo image to the ImageView
+        imageView = UIImageView(image: logo)
+        // the contentMode for used for image logo
+        imageView.contentMode = .scaleAspectFit
+        // adding the imageView to navigation item
+        self.nv_Item.titleView = imageView
+        
     }
-    */
-
 }

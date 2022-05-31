@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="flz-Di-NDN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="flz-Di-NDN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -523,7 +523,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" backIndicatorImage="Alertem Logo" translatesAutoresizingMaskIntoConstraints="NO" id="MD3-4C-yXH">
-                                <rect key="frame" x="0.0" y="98" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="44"/>
                                 <color key="barTintColor" red="0.74158990380000001" green="0.1400278509" blue="0.1413287818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem id="iX5-OR-pac">
@@ -536,19 +536,16 @@
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotificationBell" translatesAutoresizingMaskIntoConstraints="NO" id="oXA-hy-tsv">
-                                <rect key="frame" x="324" y="108" width="35" height="25"/>
+                                <rect key="frame" x="324" y="64" width="35" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="HaD-3R-Aqw"/>
                                     <constraint firstAttribute="height" constant="25" id="VgO-tg-IXj"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBN-tB-5nK">
-                                <rect key="frame" x="65.5" y="288" width="283" height="69"/>
-
-=======
+                                <rect key="frame" x="65.5" y="244" width="283" height="69"/>
                                 <color key="backgroundColor" red="0.74117647058823533" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> 4e293e6813033a67491a841bcbeca0785fc3e2ee
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="SEND LOCATION ">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
@@ -556,17 +553,25 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTW-zN-BDn">
-                                <rect key="frame" x="181" y="427" width="52" height="46"/>
+                                <rect key="frame" x="181.5" y="383" width="51.5" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-St-SiY">
+                                <rect key="frame" x="367" y="54" width="27" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jAB-OO-9Yc"/>
+                                    <constraint firstAttribute="width" constant="27" id="lbG-t0-cWl"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awt-V5-gr5">
-                                <rect key="frame" x="132" y="540" width="150" height="150"/>
-
-=======
+                                <rect key="frame" x="132" y="507" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.74117647060000003" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
->>>>>>> 4e293e6813033a67491a841bcbeca0785fc3e2ee
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2bX-F0-6H7"/>
+                                    <constraint firstAttribute="width" secondItem="Awt-V5-gr5" secondAttribute="height" multiplier="1:1" id="tuN-dd-E9h"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="TRIGGER PANNIC">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
@@ -576,27 +581,18 @@
                                     <action selector="triggerBtnPress:" destination="anX-Vk-V4y" eventType="touchUpInside" id="yWH-TD-Tfj"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-St-SiY">
-                                <rect key="frame" x="367" y="98" width="27" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="jAB-OO-9Yc"/>
-                                    <constraint firstAttribute="width" constant="27" id="lbG-t0-cWl"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p4I-ET-nge"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Awt-V5-gr5" firstAttribute="centerX" secondItem="cTW-zN-BDn" secondAttribute="centerX" id="2fc-Ig-GT7"/>
                             <constraint firstItem="cTW-zN-BDn" firstAttribute="top" secondItem="IBN-tB-5nK" secondAttribute="bottom" constant="70" id="4dO-9O-ytz"/>
                             <constraint firstItem="IBN-tB-5nK" firstAttribute="centerX" secondItem="p4I-ET-nge" secondAttribute="centerX" id="5kp-gQ-Nqg"/>
                             <constraint firstItem="Tpg-St-SiY" firstAttribute="top" secondItem="p4I-ET-nge" secondAttribute="top" constant="10" id="ALw-VU-ugL"/>
                             <constraint firstItem="MD3-4C-yXH" firstAttribute="leading" secondItem="p4I-ET-nge" secondAttribute="leading" id="D9H-Zb-EkF"/>
-                            <constraint firstItem="Awt-V5-gr5" firstAttribute="centerX" secondItem="cTW-zN-BDn" secondAttribute="centerX" id="L7K-WY-2J5"/>
                             <constraint firstItem="Tpg-St-SiY" firstAttribute="leading" secondItem="oXA-hy-tsv" secondAttribute="trailing" constant="8" symbolic="YES" id="PSv-bN-fJj"/>
-                            <constraint firstItem="Awt-V5-gr5" firstAttribute="top" secondItem="cTW-zN-BDn" secondAttribute="bottom" constant="67" id="QA0-M1-jdh"/>
                             <constraint firstItem="IBN-tB-5nK" firstAttribute="top" secondItem="p4I-ET-nge" secondAttribute="top" constant="200" id="SUf-rq-wjj"/>
-                            <constraint firstItem="Awt-V5-gr5" firstAttribute="width" secondItem="cTW-zN-BDn" secondAttribute="width" multiplier="2.88462" id="THq-mc-5EC"/>
-                            <constraint firstItem="Awt-V5-gr5" firstAttribute="height" secondItem="cTW-zN-BDn" secondAttribute="height" multiplier="3.26087" id="d3n-c2-hi4"/>
+                            <constraint firstItem="Awt-V5-gr5" firstAttribute="top" secondItem="cTW-zN-BDn" secondAttribute="bottom" constant="78" id="UCw-E4-pJh"/>
                             <constraint firstItem="cTW-zN-BDn" firstAttribute="centerX" secondItem="IBN-tB-5nK" secondAttribute="centerX" id="fHN-a0-7Au"/>
                             <constraint firstItem="MD3-4C-yXH" firstAttribute="top" secondItem="p4I-ET-nge" secondAttribute="top" constant="10" id="gUQ-pa-4We"/>
                             <constraint firstItem="IBN-tB-5nK" firstAttribute="width" secondItem="yC5-lZ-rYo" secondAttribute="width" multiplier="0.683575" id="hC4-hF-ncl"/>
@@ -784,28 +780,46 @@
             </objects>
             <point key="canvasLocation" x="5792.753623188406" y="-607.36607142857144"/>
         </scene>
-        <!--Admin GroupVC-->
+        <!--Title-->
         <scene sceneID="6gx-yj-eYl">
             <objects>
                 <viewController storyboardIdentifier="admin_GroupVC" id="TST-uO-M9v" customClass="admin_GroupVC" customModule="AlertEm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xWV-v0-74L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" backIndicatorImage="Alertem Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gsv-KO-hax">
+                                <rect key="frame" x="0.0" y="54" width="414" height="44"/>
+                                <color key="barTintColor" red="0.74158990380000001" green="0.1400278509" blue="0.1413287818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem id="TAG-hl-jBt"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6NQ-RN-DNk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gsv-KO-hax" firstAttribute="leading" secondItem="6NQ-RN-DNk" secondAttribute="leading" id="CXt-d8-4Am"/>
+                            <constraint firstItem="Gsv-KO-hax" firstAttribute="trailing" secondItem="6NQ-RN-DNk" secondAttribute="trailing" id="aeu-6A-sKo"/>
+                            <constraint firstItem="Gsv-KO-hax" firstAttribute="top" secondItem="6NQ-RN-DNk" secondAttribute="top" constant="10" id="ye9-JZ-vdv"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="5oy-AY-4Bk"/>
+                    <connections>
+                        <outlet property="NV" destination="Gsv-KO-hax" id="N9o-bE-2yC"/>
+                        <outlet property="nv_Item" destination="TAG-hl-jBt" id="uK1-XI-oD7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXs-fa-hYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7613.04347826087" y="47.544642857142854"/>
+            <point key="canvasLocation" x="7422" y="48"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VSp-8c-4UA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A1Y-nr-Cxk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="A1Y-nr-Cxk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kf6-2K-gcm">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
