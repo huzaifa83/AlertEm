@@ -71,8 +71,8 @@ class sendLocationVC: UIViewController, UINavigationBarDelegate {
     @IBAction func triggerBtnPress(_ sender: UIButton) {
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "safeVC") as! safeVC
-        vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .flipHorizontal
+       
+        vc.modalTransitionStyle = .crossDissolve
         
         present(vc, animated: true, completion: nil)
     }
