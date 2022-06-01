@@ -624,10 +624,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAl-l0-Qyr">
-                                <rect key="frame" x="62" y="309" width="290" height="315"/>
+                                <rect key="frame" x="62" y="309" width="290" height="322.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="V7C-mN-jQA">
-                                        <rect key="frame" x="110" y="93" width="70" height="182"/>
+                                        <rect key="frame" x="110" y="99" width="70" height="182"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJl-wD-V6k">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -671,7 +671,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="s1M-D2-0OO" firstAttribute="top" secondItem="wAl-l0-Qyr" secondAttribute="top" constant="40" id="Exz-18-A0D"/>
-                                    <constraint firstItem="V7C-mN-jQA" firstAttribute="top" secondItem="s1M-D2-0OO" secondAttribute="bottom" constant="29" id="M7s-Ry-Zsd"/>
+                                    <constraint firstItem="V7C-mN-jQA" firstAttribute="top" secondItem="s1M-D2-0OO" secondAttribute="bottom" constant="35" id="M7s-Ry-Zsd"/>
                                     <constraint firstItem="V7C-mN-jQA" firstAttribute="centerX" secondItem="s1M-D2-0OO" secondAttribute="centerX" id="YMl-rD-S9Y"/>
                                     <constraint firstAttribute="trailing" secondItem="s1M-D2-0OO" secondAttribute="trailing" constant="82" id="ao3-5h-7mM"/>
                                     <constraint firstItem="s1M-D2-0OO" firstAttribute="leading" secondItem="wAl-l0-Qyr" secondAttribute="leading" constant="82" id="oGG-DH-hcu"/>
@@ -681,7 +681,7 @@
                         <viewLayoutGuide key="safeArea" id="QSJ-TH-aOd"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wAl-l0-Qyr" firstAttribute="height" secondItem="S3v-3h-ATk" secondAttribute="height" multiplier="0.351562" id="4qC-UD-qix"/>
+                            <constraint firstItem="wAl-l0-Qyr" firstAttribute="height" secondItem="S3v-3h-ATk" secondAttribute="height" multiplier="0.36" id="4qC-UD-qix"/>
                             <constraint firstItem="wAl-l0-Qyr" firstAttribute="width" secondItem="S3v-3h-ATk" secondAttribute="width" multiplier="0.700483" id="98X-Mg-fe4"/>
                             <constraint firstItem="wAl-l0-Qyr" firstAttribute="top" secondItem="QSJ-TH-aOd" secondAttribute="top" constant="265" id="PbB-Bd-mC5"/>
                             <constraint firstItem="wAl-l0-Qyr" firstAttribute="centerX" secondItem="QSJ-TH-aOd" secondAttribute="centerX" id="esS-90-tC1"/>
@@ -689,6 +689,7 @@
                     </view>
                     <connections>
                         <outlet property="noBtn" destination="kCL-eQ-5aq" id="EnW-X3-yTX"/>
+                        <outlet property="popView" destination="wAl-l0-Qyr" id="2jD-Zo-SLm"/>
                         <outlet property="yesBtn" destination="FJl-wD-V6k" id="WsR-MP-x3H"/>
                     </connections>
                 </viewController>
@@ -780,7 +781,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rAf-Sr-N72"/>
                                 </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>

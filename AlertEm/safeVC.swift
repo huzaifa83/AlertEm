@@ -10,6 +10,9 @@ import UIKit
 class safeVC: UIViewController {
 
     
+    @IBOutlet weak var popView: UIView!
+    
+    
     @IBOutlet weak var yesBtn: UIButton!
 
     @IBOutlet weak var noBtn: UIButton!
@@ -22,6 +25,8 @@ class safeVC: UIViewController {
         yesBtn.layer.cornerRadius = yesBtn.frame.size.width/2
 
         noBtn.layer.cornerRadius = noBtn.frame.size.width/2
+        
+        popView.layer.cornerRadius = 10
     }
     
     
