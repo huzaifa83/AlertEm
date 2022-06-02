@@ -21,7 +21,7 @@ class SideMenuTableController1: UITableViewController {
         MenuTableView.dataSource = self
         MenuTableView.dataSource = self
         
-        MenuTableView.backgroundColor = UIColor.lightGray
+        MenuTableView.backgroundColor = UIColor.white
 
         // Uncomment the following line to preserve selection between presentations
        self.clearsSelectionOnViewWillAppear = false
@@ -44,7 +44,7 @@ class SideMenuTableController1: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OptionName", for: indexPath) as! MenuTableViewCell1
-        cell.backgroundColor = UIColor.lightGray
+        cell.backgroundColor = UIColor.white
         cell.MenuIconImages.image = UIImage(named: self.LogoImg[indexPath.row])
         cell.MenuIconsNames.text = names[indexPath.row]
         
@@ -56,8 +56,24 @@ class SideMenuTableController1: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("this is the row number you have selected \(indexPath.row)")
         
-        let selectedOption = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController1
-        navigationController?.pushViewController(selectedOption, animated: true)
+        
+        var optionClicked = indexPath.row
+        print(optionClicked)
+
+
+        switch optionClicked{
+        case 0:
+            print("1 option is slected")
+            let selectedOption = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController1
+            navigationController?.pushViewController(selectedOption, animated: true)
+        case 2:
+            let selectedOption1 = storyboard?.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+            navigationController?.pushViewController(selectedOption1, animated: true)
+        default:
+            return
+        }
+        
+        
         return
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
