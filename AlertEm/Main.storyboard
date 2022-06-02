@@ -551,6 +551,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="sendLocationBtnPress:" destination="anX-Vk-V4y" eventType="touchUpInside" id="eNf-Gd-hEG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTW-zN-BDn">
                                 <rect key="frame" x="181.5" y="417" width="51.5" height="46"/>
@@ -861,6 +864,78 @@
             </objects>
             <point key="canvasLocation" x="5792.753623188406" y="-607.36607142857144"/>
         </scene>
+        <!--SettingsVC-->
+        <scene sceneID="EfD-b8-YYG">
+            <objects>
+                <viewController storyboardIdentifier="SettingsVC" id="OHA-rG-tRN" customClass="SettingsVC" customModule="AlertEm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bz-hj-FM3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" backIndicatorImage="Alertem Logo" translatesAutoresizingMaskIntoConstraints="NO" id="eEf-Qs-tmZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem id="ZqY-xz-a2x"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="LcB-xC-oGE">
+                                <rect key="frame" x="367" y="44" width="27" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settingBG" translatesAutoresizingMaskIntoConstraints="NO" id="fD2-np-T6h">
+                                <rect key="frame" x="0.0" y="44" width="414" height="330"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NotificationBell" translatesAutoresizingMaskIntoConstraints="NO" id="xv4-Of-dG9">
+                                <rect key="frame" x="321" y="51" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1Y-lE-rfi">
+                                <rect key="frame" x="147" y="312" width="120" height="120"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHG-0b-TiL">
+                                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boss" translatesAutoresizingMaskIntoConstraints="NO" id="hy3-sM-dDg">
+                                                <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.74158990380000001" green="0.1400278509" blue="0.1413287818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="YFD-jq-KIW"/>
+                                    <constraint firstAttribute="height" constant="120" id="pBO-Xv-neW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q80-P0-6RF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eEf-Qs-tmZ" firstAttribute="trailing" secondItem="Q80-P0-6RF" secondAttribute="trailing" id="4Fk-Ch-aoo"/>
+                            <constraint firstItem="fD2-np-T6h" firstAttribute="trailing" secondItem="Q80-P0-6RF" secondAttribute="trailing" id="BLB-r6-Wla"/>
+                            <constraint firstItem="U1Y-lE-rfi" firstAttribute="top" secondItem="Q80-P0-6RF" secondAttribute="top" constant="268" id="R1R-iF-H37"/>
+                            <constraint firstItem="eEf-Qs-tmZ" firstAttribute="leading" secondItem="Q80-P0-6RF" secondAttribute="leading" id="V0i-wE-SW8"/>
+                            <constraint firstItem="fD2-np-T6h" firstAttribute="width" secondItem="8bz-hj-FM3" secondAttribute="width" id="dcw-wP-FOf"/>
+                            <constraint firstItem="fD2-np-T6h" firstAttribute="leading" secondItem="Q80-P0-6RF" secondAttribute="leading" id="fQu-s0-9lM"/>
+                            <constraint firstItem="fD2-np-T6h" firstAttribute="height" secondItem="8bz-hj-FM3" secondAttribute="height" multiplier="0.368304" id="s1x-NA-Fwe"/>
+                            <constraint firstItem="U1Y-lE-rfi" firstAttribute="centerX" secondItem="Q80-P0-6RF" secondAttribute="centerX" id="vHV-sd-QfB"/>
+                            <constraint firstItem="eEf-Qs-tmZ" firstAttribute="top" secondItem="Q80-P0-6RF" secondAttribute="top" id="yim-zb-ymX"/>
+                            <constraint firstItem="fD2-np-T6h" firstAttribute="top" secondItem="Q80-P0-6RF" secondAttribute="top" id="ynW-Gl-BDC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="redView" destination="fHG-0b-TiL" id="xmE-5i-hsB"/>
+                        <outlet property="whiteView" destination="U1Y-lE-rfi" id="zbd-Yp-T9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhl-ti-IP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6502.898550724638" y="-607.36607142857144"/>
+        </scene>
         <!--Title-->
         <scene sceneID="6gx-yj-eYl">
             <objects>
@@ -942,7 +1017,9 @@
         <image name="Uncheck" width="25" height="25"/>
         <image name="User name" width="200" height="200"/>
         <image name="alertem red logo" width="301" height="103"/>
+        <image name="boss" width="64" height="64"/>
         <image name="password" width="200" height="259"/>
+        <image name="settingBG" width="558" height="150"/>
         <image name="sidemenu" width="32" height="32"/>
         <image name="verify OTP" width="300" height="289"/>
         <systemColor name="labelColor">

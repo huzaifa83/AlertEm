@@ -10,6 +10,7 @@
 		0625B86F27EE4A8C0094A90F /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625B86E27EE4A8C0094A90F /* OTPViewController.swift */; };
 		06834D0928460DE1001E51A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06834D0828460DE1001E51A3 /* Main.storyboard */; };
 		06834D0B284623EA001E51A3 /* safeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06834D0A284623EA001E51A3 /* safeVC.swift */; };
+		06834D372848962C001E51A3 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06834D362848962C001E51A3 /* SettingsVC.swift */; };
 		068409592842228000A5C6EA /* SideMenuTableController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068409582842228000A5C6EA /* SideMenuTableController1.swift */; };
 		0684095B2842229200A5C6EA /* ProfileViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684095A2842229200A5C6EA /* ProfileViewController1.swift */; };
 		068A4F5A27E76ED2004EB61D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068A4F5927E76ED2004EB61D /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		0625B86E27EE4A8C0094A90F /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		06834D0828460DE1001E51A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		06834D0A284623EA001E51A3 /* safeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = safeVC.swift; sourceTree = "<group>"; };
+		06834D362848962C001E51A3 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		068409582842228000A5C6EA /* SideMenuTableController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableController1.swift; sourceTree = "<group>"; };
 		0684095A2842229200A5C6EA /* ProfileViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController1.swift; sourceTree = "<group>"; };
 		068A4F5627E76ED2004EB61D /* AlertEm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertEm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 				35CB9B612832657D0066D98B /* loginViewController.swift */,
 				06834D0828460DE1001E51A3 /* Main.storyboard */,
 				06834D0A284623EA001E51A3 /* safeVC.swift */,
+				06834D362848962C001E51A3 /* SettingsVC.swift */,
 			);
 			path = AlertEm;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				E8C262282833AE1800C28D8B /* contactsTvViewController.swift in Sources */,
 				068A4F5C27E76ED2004EB61D /* SceneDelegate.swift in Sources */,
 				06834D0B284623EA001E51A3 /* safeVC.swift in Sources */,
+				06834D372848962C001E51A3 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
