@@ -948,16 +948,88 @@
                                 <rect key="frame" x="0.0" y="54" width="414" height="44"/>
                                 <color key="barTintColor" red="0.74158990380000001" green="0.1400278509" blue="0.1413287818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <navigationItem id="TAG-hl-jBt"/>
+                                    <navigationItem id="TAG-hl-jBt">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="sidemenu" id="qUM-IS-gup"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send your location for help to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHn-Gt-YgQ">
+                                <rect key="frame" x="95" y="158" width="224" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="2h7-Bn-bgn">
+                                <rect key="frame" x="367" y="54" width="27" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aim-bw-QKE"/>
+                                    <constraint firstAttribute="width" constant="27" id="lXy-Ry-WWa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Send Location pic" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-hd-0hK">
+                                <rect key="frame" x="117" y="237" width="180" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="PQT-NW-Rho"/>
+                                    <constraint firstAttribute="width" constant="180" id="uqg-Zz-c1u"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKc-7D-F3m">
+                                <rect key="frame" x="72" y="360" width="271" height="48"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="f1N-P3-f56"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQd-WH-SuV">
+                                <rect key="frame" x="189" y="450.5" width="36" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zl-wE-K1h">
+                                <rect key="frame" x="71.5" y="531.5" width="271" height="39.5"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="awb-E5-pzH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Group">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotificationBell" translatesAutoresizingMaskIntoConstraints="NO" id="vw5-ar-DWQ">
+                                <rect key="frame" x="331" y="64" width="35" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="E33-3z-EWu"/>
+                                    <constraint firstAttribute="width" constant="35" id="bAO-KQ-Hmt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6NQ-RN-DNk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Gsv-KO-hax" firstAttribute="leading" secondItem="6NQ-RN-DNk" secondAttribute="leading" id="CXt-d8-4Am"/>
-                            <constraint firstItem="Gsv-KO-hax" firstAttribute="trailing" secondItem="6NQ-RN-DNk" secondAttribute="trailing" id="aeu-6A-sKo"/>
-                            <constraint firstItem="Gsv-KO-hax" firstAttribute="top" secondItem="6NQ-RN-DNk" secondAttribute="top" constant="10" id="ye9-JZ-vdv"/>
+                            <constraint firstItem="AKc-7D-F3m" firstAttribute="centerX" secondItem="PHe-hd-0hK" secondAttribute="centerX" id="3RI-T3-6Ss"/>
+                            <constraint firstItem="zHn-Gt-YgQ" firstAttribute="top" secondItem="Gsv-KO-hax" secondAttribute="bottom" constant="60" id="6t3-G5-Pbx"/>
+                            <constraint firstItem="8zl-wE-K1h" firstAttribute="top" secondItem="cQd-WH-SuV" secondAttribute="bottom" constant="59.5" id="7Dn-uA-Nz8"/>
+                            <constraint firstItem="AKc-7D-F3m" firstAttribute="top" secondItem="PHe-hd-0hK" secondAttribute="bottom" constant="42" id="8IU-sO-Vjp"/>
+                            <constraint firstItem="cQd-WH-SuV" firstAttribute="top" secondItem="AKc-7D-F3m" secondAttribute="bottom" constant="42.5" id="E3H-Cu-g4m"/>
+                            <constraint firstItem="cQd-WH-SuV" firstAttribute="centerX" secondItem="AKc-7D-F3m" secondAttribute="centerX" id="VOa-Ya-aGB"/>
+                            <constraint firstItem="6NQ-RN-DNk" firstAttribute="trailing" secondItem="2h7-Bn-bgn" secondAttribute="trailing" constant="20" id="W14-O3-O8u"/>
+                            <constraint firstItem="PHe-hd-0hK" firstAttribute="top" secondItem="zHn-Gt-YgQ" secondAttribute="bottom" constant="58" id="XcH-nn-9Wi"/>
+                            <constraint firstItem="Gsv-KO-hax" firstAttribute="top" secondItem="6NQ-RN-DNk" secondAttribute="top" constant="10" id="ZI5-K3-OFU"/>
+                            <constraint firstItem="PHe-hd-0hK" firstAttribute="centerX" secondItem="zHn-Gt-YgQ" secondAttribute="centerX" id="aVG-gv-6hJ"/>
+                            <constraint firstItem="8zl-wE-K1h" firstAttribute="centerX" secondItem="cQd-WH-SuV" secondAttribute="centerX" id="cj0-kd-K9n"/>
+                            <constraint firstItem="Gsv-KO-hax" firstAttribute="leading" secondItem="6NQ-RN-DNk" secondAttribute="leading" id="l6K-1l-RjW"/>
+                            <constraint firstItem="2h7-Bn-bgn" firstAttribute="leading" secondItem="vw5-ar-DWQ" secondAttribute="trailing" constant="1" id="pFA-Ac-NYB"/>
+                            <constraint firstItem="zHn-Gt-YgQ" firstAttribute="leading" secondItem="6NQ-RN-DNk" secondAttribute="leading" constant="95" id="t2E-5V-4OZ"/>
+                            <constraint firstItem="6NQ-RN-DNk" firstAttribute="trailing" secondItem="zHn-Gt-YgQ" secondAttribute="trailing" constant="95" id="tN6-WK-TLW"/>
+                            <constraint firstItem="2h7-Bn-bgn" firstAttribute="top" secondItem="6NQ-RN-DNk" secondAttribute="top" constant="10" id="tiP-6f-0wF"/>
+                            <constraint firstItem="Gsv-KO-hax" firstAttribute="trailing" secondItem="6NQ-RN-DNk" secondAttribute="trailing" id="uRX-9a-lR1"/>
+                            <constraint firstItem="vw5-ar-DWQ" firstAttribute="top" secondItem="6NQ-RN-DNk" secondAttribute="top" constant="20" id="wbe-sL-vxh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="5oy-AY-4Bk"/>
@@ -968,7 +1040,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXs-fa-hYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7422" y="48"/>
+            <point key="canvasLocation" x="7421.739130434783" y="47.544642857142854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VSp-8c-4UA">
@@ -1014,6 +1086,7 @@
         <image name="Intro" width="300" height="375"/>
         <image name="Menu" width="150" height="150"/>
         <image name="NotificationBell" width="66.666664123535156" height="69.333335876464844"/>
+        <image name="Send Location pic" width="300" height="255"/>
         <image name="Uncheck" width="25" height="25"/>
         <image name="User name" width="200" height="200"/>
         <image name="alertem red logo" width="301" height="103"/>

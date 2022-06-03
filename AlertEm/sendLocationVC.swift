@@ -72,7 +72,10 @@ class sendLocationVC: UIViewController, UINavigationBarDelegate {
     
     @IBAction func sendLocationBtnPress(_ sender: UIButton) {
     
-        let vc = storyboard?.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+//        present(vc, animated: true, completion: nil)
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "admin_GroupVC") as! admin_GroupVC
         present(vc, animated: true, completion: nil)
     
     }
