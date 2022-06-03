@@ -11,6 +11,8 @@ class contactsTvViewController: UIViewController {
     
     var contacts = ["Person 1", "Person 2", "Person 3", "Person 4", "Person 5", "Person 6", "Person 7", "Person 8", "Person 9", "Person 10", "Person 11", "Person 12" ]
     
+    var selectedContacts = ""
+    
     var check = true
     @IBOutlet weak var tableV: UITableView!
     
@@ -27,21 +29,51 @@ class contactsTvViewController: UIViewController {
     
     
     @IBAction func PrcheckBtn(_ sender: UIButton) {
-        print("Hello")
-                
-        check.toggle()
-        print(check)
-        if check == false {
-            let image = UIImage(named: "Check")
-            sender.setImage(image, for: .normal)
-        }
-        else {
+//        print("Hello")
+//
+//        check.toggle()
+//        print(check)
+//        if check == false {
+//            let image = UIImage(named: "Check")
+//            sender.setImage(image, for: .normal)
+//        }
+//        else {
+//
+//            let image = UIImage(named: "Uncheck")
+//            sender.setImage(image, for: .normal)
+//        }
+//
+    }
+    
+    
+    @IBAction func sendContactsBtnPress(_ sender: UIButton) {
+    
+       
+        
+        selectedContacts.removeAll()
+        if let selectedRows = tableV.indexPathsForSelectedRows {
             
-            let image = UIImage(named: "Uncheck")
-            sender.setImage(image, for: .normal)
+            for iPath in selectedRows {
+                selectedContacts.append("\(contacts[iPath.row]) , ")
+            }
+            
+            for item in selectedContacts {
+                let vc = storyboard?.instantiateViewController(withIdentifier: "ContactsPopUpVC") as! ContactsPopUpVC
+                vc.modalPresentationStyle = .popover
+                vc.message = selectedContacts
+                //vc.modalTransitionStyle = .crossDissolve
+                print("You have sent your location: \(selectedContacts)")
+                present(vc, animated: true, completion: nil)
+            }
+            
         }
+        
+    
     
     }
+    
+    
+    
     
 }
 
@@ -54,6 +86,7 @@ extension contactsTvViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! customTableViewCell
         
         cell.nameLbl.text = contacts[indexPath.row]
+        cell.selectionStyle = .none
         
         return cell
     }

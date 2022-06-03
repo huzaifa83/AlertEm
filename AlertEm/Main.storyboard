@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="flz-Di-NDN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="flz-Di-NDN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -373,8 +373,8 @@
                                     <navigationItem title="Selected Contacts" id="6Bv-0F-OWA"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X5m-gI-IdO">
-                                <rect key="frame" x="0.0" y="79" width="414" height="783"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X5m-gI-IdO">
+                                <rect key="frame" x="0.0" y="79" width="414" height="761"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="9br-y1-MN9" customClass="customTableViewCell" customModule="AlertEm" customModuleProvider="target">
@@ -393,28 +393,15 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3x-1z-XYk">
-                                                    <rect key="frame" x="345" y="2" width="49" height="39"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="Uncheck"/>
-                                                    <connections>
-                                                        <action selector="PrcheckBtn:" destination="Rz4-Nl-uDd" eventType="touchUpInside" id="64c-em-Vmu"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="U3x-1z-XYk" firstAttribute="centerY" secondItem="4dR-5v-B8A" secondAttribute="centerY" id="6mo-0v-xRC"/>
                                                 <constraint firstItem="4dR-5v-B8A" firstAttribute="leading" secondItem="Kf4-J0-o9v" secondAttribute="leading" constant="16" id="JDe-ol-yGv"/>
                                                 <constraint firstItem="4dR-5v-B8A" firstAttribute="top" secondItem="Kf4-J0-o9v" secondAttribute="top" constant="11" id="Maj-dg-suK"/>
                                                 <constraint firstAttribute="trailing" secondItem="4dR-5v-B8A" secondAttribute="trailing" constant="100" id="c6i-ho-5Uz"/>
-                                                <constraint firstAttribute="trailing" secondItem="U3x-1z-XYk" secondAttribute="trailing" constant="20" symbolic="YES" id="fgA-Vg-niq"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="U3x-1z-XYk" firstAttribute="top" secondItem="9br-y1-MN9" secondAttribute="top" constant="2" id="BJa-QZ-bOQ"/>
-                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
                                         <connections>
-                                            <outlet property="checkBTN" destination="U3x-1z-XYk" id="3dC-C1-tTE"/>
                                             <outlet property="customCell" destination="Kf4-J0-o9v" id="wYi-nL-4I2"/>
                                             <outlet property="nameLbl" destination="4dR-5v-B8A" id="c6t-ro-nBN"/>
                                         </connections>
@@ -425,16 +412,28 @@
                                     <outlet property="delegate" destination="Rz4-Nl-uDd" id="AAn-Rt-dr0"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acF-u6-gcO">
+                                <rect key="frame" x="0.0" y="840" width="414" height="31"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Send Contacts"/>
+                                <connections>
+                                    <action selector="sendContactsBtnPress:" destination="Rz4-Nl-uDd" eventType="touchUpInside" id="Tmo-b1-T8Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="psp-3y-jft"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="acF-u6-gcO" firstAttribute="leading" secondItem="psp-3y-jft" secondAttribute="leading" id="0Oe-8u-xo7"/>
                             <constraint firstItem="psp-3y-jft" firstAttribute="trailing" secondItem="X5m-gI-IdO" secondAttribute="trailing" id="67y-6k-11T"/>
-                            <constraint firstItem="psp-3y-jft" firstAttribute="bottom" secondItem="X5m-gI-IdO" secondAttribute="bottom" id="Eps-Od-x7F"/>
+                            <constraint firstItem="psp-3y-jft" firstAttribute="bottom" secondItem="X5m-gI-IdO" secondAttribute="bottom" constant="22" id="Eps-Od-x7F"/>
                             <constraint firstItem="XhH-a4-Y4p" firstAttribute="top" secondItem="FHC-DS-tFS" secondAttribute="top" constant="35" id="GxX-V7-WcX"/>
+                            <constraint firstItem="psp-3y-jft" firstAttribute="trailing" secondItem="acF-u6-gcO" secondAttribute="trailing" id="KeM-4V-ztT"/>
                             <constraint firstItem="X5m-gI-IdO" firstAttribute="leading" secondItem="psp-3y-jft" secondAttribute="leading" id="N4e-lO-kjT"/>
                             <constraint firstItem="XhH-a4-Y4p" firstAttribute="leading" secondItem="psp-3y-jft" secondAttribute="leading" id="hxl-LQ-cms"/>
                             <constraint firstItem="X5m-gI-IdO" firstAttribute="top" secondItem="XhH-a4-Y4p" secondAttribute="bottom" id="mqP-Bc-xOO"/>
+                            <constraint firstItem="acF-u6-gcO" firstAttribute="bottom" secondItem="psp-3y-jft" secondAttribute="bottom" constant="9" id="rJf-25-UAY"/>
                             <constraint firstItem="XhH-a4-Y4p" firstAttribute="trailing" secondItem="psp-3y-jft" secondAttribute="trailing" id="tNP-zr-Mt9"/>
                         </constraints>
                     </view>
@@ -445,6 +444,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLQ-Of-Q1T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1446.376811594203" y="690.40178571428567"/>
+        </scene>
+        <!--Contacts Pop UpVC-->
+        <scene sceneID="P93-RB-NqP">
+            <objects>
+                <viewController storyboardIdentifier="ContactsPopUpVC" id="t2T-YI-Q2a" customClass="ContactsPopUpVC" customModule="AlertEm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E40-Sf-lQy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1c-1I-Xzn">
+                                <rect key="frame" x="53" y="348" width="308" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snm-xd-edq">
+                                        <rect key="frame" x="114" y="8" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="roundCheck"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="closePopUpBtnPress:" destination="t2T-YI-Q2a" eventType="touchUpInside" id="oJ1-ep-qz2"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-I6-DZE">
+                                        <rect key="frame" x="34" y="105" width="240" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m48-N3-KFK">
+                                        <rect key="frame" x="34" y="116" width="240" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8oE-Yc-l6n"/>
+                                    <constraint firstAttribute="width" constant="308" id="Wmy-MI-sca"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rwa-3R-w1E"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y1c-1I-Xzn" firstAttribute="centerY" secondItem="E40-Sf-lQy" secondAttribute="centerY" id="Nfo-Rn-P7x"/>
+                            <constraint firstItem="Y1c-1I-Xzn" firstAttribute="centerX" secondItem="E40-Sf-lQy" secondAttribute="centerX" id="NmX-ZZ-kVG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactsLbl" destination="m48-N3-KFK" id="e5M-S7-xOp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kv0-nR-gzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.01449275362324" y="698.4375"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="qn1-h9-X1O">
@@ -1148,11 +1204,11 @@
         <image name="Menu" width="150" height="150"/>
         <image name="NotificationBell" width="66.666664123535156" height="69.333335876464844"/>
         <image name="Send Location pic" width="300" height="255"/>
-        <image name="Uncheck" width="25" height="25"/>
         <image name="User name" width="200" height="200"/>
         <image name="alertem red logo" width="301" height="103"/>
         <image name="boss" width="64" height="64"/>
         <image name="password" width="200" height="259"/>
+        <image name="roundCheck" width="50" height="51"/>
         <image name="settingBG" width="558" height="150"/>
         <image name="sidemenu" width="32" height="32"/>
         <image name="verify OTP" width="300" height="289"/>
@@ -1161,6 +1217,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

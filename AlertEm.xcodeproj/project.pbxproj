@@ -24,6 +24,7 @@
 		35CB9B66283266170066D98B /* admin_GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB9B65283266170066D98B /* admin_GroupVC.swift */; };
 		4D1D7DAB284218C600656CFB /* MenuTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D7DAA284218C600656CFB /* MenuTableViewCell1.swift */; };
 		4DA18B262840C13D00C3AD59 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 4DA18B252840C13D00C3AD59 /* SideMenu */; };
+		E885FB5E284A273100F8B537 /* ContactsPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885FB5D284A273100F8B537 /* ContactsPopUpVC.swift */; };
 		E8C262282833AE1800C28D8B /* contactsTvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C262272833AE1800C28D8B /* contactsTvViewController.swift */; };
 		E8C2622A2833B02000C28D8B /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C262292833B02000C28D8B /* customTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		35CB9B63283265BF0066D98B /* sendLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendLocationVC.swift; sourceTree = "<group>"; };
 		35CB9B65283266170066D98B /* admin_GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admin_GroupVC.swift; sourceTree = "<group>"; };
 		4D1D7DAA284218C600656CFB /* MenuTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell1.swift; sourceTree = "<group>"; };
+		E885FB5D284A273100F8B537 /* ContactsPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPopUpVC.swift; sourceTree = "<group>"; };
 		E8C262272833AE1800C28D8B /* contactsTvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsTvViewController.swift; sourceTree = "<group>"; };
 		E8C262292833B02000C28D8B /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 				06834D0828460DE1001E51A3 /* Main.storyboard */,
 				06834D0A284623EA001E51A3 /* safeVC.swift */,
 				06834D362848962C001E51A3 /* SettingsVC.swift */,
+				E885FB5D284A273100F8B537 /* ContactsPopUpVC.swift */,
 			);
 			path = AlertEm;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				068A4F5A27E76ED2004EB61D /* AppDelegate.swift in Sources */,
 				0694C61D27F475C700D663A3 /* OkayViewController.swift in Sources */,
 				E8C262282833AE1800C28D8B /* contactsTvViewController.swift in Sources */,
+				E885FB5E284A273100F8B537 /* ContactsPopUpVC.swift in Sources */,
 				068A4F5C27E76ED2004EB61D /* SceneDelegate.swift in Sources */,
 				06834D0B284623EA001E51A3 /* safeVC.swift in Sources */,
 				06834D372848962C001E51A3 /* SettingsVC.swift in Sources */,
