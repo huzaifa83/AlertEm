@@ -7,8 +7,9 @@
 
 import UIKit
 
-class contactsTvViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class contactsTvViewController: UIViewController {
     
+    var contacts = ["Person 1", "Person 2", "Person 3", "Person 4", "Person 5", "Person 6", "Person 7", "Person 8", "Person 9", "Person 10", "Person 11", "Person 12" ]
     
     var check = true
     @IBOutlet weak var tableV: UITableView!
@@ -22,16 +23,7 @@ class contactsTvViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! customTableViewCell
-        cell.nameLbl.text = "Name"
-        return cell
-    }
+  
     
     
     @IBAction func PrcheckBtn(_ sender: UIButton) {
@@ -51,6 +43,32 @@ class contactsTvViewController: UIViewController, UITableViewDataSource, UITable
     
     }
     
-   
+}
 
+extension contactsTvViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return contacts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! customTableViewCell
+        
+        cell.nameLbl.text = contacts[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableV.cellForRow(at: indexPath)?.accessoryType = .checkmark
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
+        tableV.cellForRow(at: indexPath)?.accessoryType = .none
+    
+    }
+    
+    
 }
